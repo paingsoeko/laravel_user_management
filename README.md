@@ -1,23 +1,39 @@
 # paingsoeko/laravel_user_management
 
 
-## Usage
-### The below command will create tables into database using Laravel migration and seeder
+# Usage
+## 1: Project Setup
 ```bash
-php artisan migrate:fresh --seed
+  git clone https://github.com/paingsoeko/laravel_user_management.git
+```
+```bash
+  cd laravel_user_management
 ```
 
-### Start the localhost server:
+## 2: Database
+- Rename `.env.example` file to `.env`inside your project root and fill the database information.
+
+- Run `composer install` or ```php composer.phar install```
+
+- Connect your database in .env file
+
+
+### Database migration and default data seeding
 ```bash
-php artisan serve
+  php artisan migrate:fresh --seed
+```
+### key generate
+```bash
+  php artisan key:generate
+```
+## 3: Run project
+```bash
+   php artisan serve
 ```
 
-## Default Account
-username
-```bash
-admin
-```
-password
-```bash
-picosbs
+
+###  Default Account Info
+```info
+    username=admin
+    password=picosbs
 ```
